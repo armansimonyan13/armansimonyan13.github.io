@@ -19,3 +19,8 @@ Map<String, Integer> roomNumbersByUserIds = Map.of(
 )
 ```
 
+The pattern is extendable:
+
+```java
+Map<Doubles, Map<Integers, List<String>>> stringsByIntegersByDoubles = Map.of();
+```
