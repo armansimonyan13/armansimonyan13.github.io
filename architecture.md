@@ -4,7 +4,7 @@
 
 Interactors are use cases. The business logic of your application.
 Should be initialized with **Repositories** and **Interactors**.
-There are independent of the framework you are using. Should be placed
+These are independent of the framework you are using. Should be placed
 in the core module of your application.
 
 ```java
@@ -36,9 +36,10 @@ class ParserInteractor {
 
 ## Repositories
 
-Repositories are external interfaceses of your application. Repositories
-are defined as interfaces in your core module and should be implemented
-in application. There may and should depend on the framework you are using.
+Repositories are external interfaceses of your application. Can be input or
+output. These are defined as interfaces in your core module and should be
+implemented in application outside of core module. May and should depend on the
+framework you are using.
 
 ```java
 // In core module
