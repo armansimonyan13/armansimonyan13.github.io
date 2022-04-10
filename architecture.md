@@ -5,7 +5,9 @@
 Interactors are use cases. The business logic of your application.
 Should be initialized with **Repositories** and **Interactors**.
 These are independent of the framework you are using. Should be placed
-in the core module of your application.
+in the core module of your application. An interactor should never
+create an instance of any interactor, but should receive it with
+injection thourgh its constructor.
 
 ```java
 class ParserInteractor {
